@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <!-- HTML data -->
+        <title>AjieDev Server - Auth Required</title>
+        <!-- CSS file -->
+        <link type='text/css' rel="stylesheet" href="../css/style.css">
+        <!-- JavaScript files -->
+        <script type='text/javascript' src="../js/jquery.min.js"></script>
+        <script type='text/javascript' src="../js/particleground.min.js"></script>
+        <script type='text/javascript' src="../js/particles.js"></script>
+        <!-- reCAPTCHA JavaScript file -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body>
+        <div id="particles"></div>
+        <div id="app">
+          <h2 style="color:white">Hello! Welcome to AjieDev Server Officials! | Solve this captcha or use another method at the server!</h2>
+          </br>
+            </br>
+          <!-- reCAPTCHA form -->
+          <center>
+            <form action="?" method="POST" id="reCAPTCHA">
+                <div class="g-recaptcha" data-sitekey="<%= publicKey %>" data-callback="onSubmit"></div>
+            </form>
+            </center>
+          </br>
+       </br>
+       </br>
+       </br>
+       </br></br>
+       </br>
+       </br>
+       </br>
+       </br>
+      </br>
+       </br>
+       </br>
+       </br>
+       </br>
+      <center>
+         <center>
+           <b style="color:white">(c) <script type="text/javascript">new Date().getFullYear()>2016&&document.write(new Date().getFullYear());</script> AjieDev Co. Software Ltd.</b>
+</center>
+        </div>
+      
+        <!-- reCAPTCHA callback function -->
+        <script>
+            function onSubmit() {
+                document.getElementById("reCAPTCHA").submit(); 
+            }
+        </script>
+    
+    </body>
+</html>
